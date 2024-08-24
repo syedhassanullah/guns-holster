@@ -7,7 +7,9 @@ const cors = require('cors');
 const app = express();
 
 const path = require('path')
-app.use(cors({ origin: "http://localhost:3000" }));
+// app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://main--guns-holsters.netlify.app/" }));
+
 app.use(bodyParser.json());
 
 
