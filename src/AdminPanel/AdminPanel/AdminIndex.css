@@ -1,0 +1,80 @@
+
+:root{
+  --text-heading:  "Orbitron", sans-serif;
+  --text-color: #033b01af;
+  --secondary-color: #14aa00; /* A shade of green */
+}
+
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+  }
+
+
+  .admin{
+    padding: 20px 0px;
+    text-align: center;
+    font-family: var(--text-heading);
+  }
+  
+
+  .admin-product h1{
+    font-family: var(--text-heading);
+    padding: 20px 0px;
+    font-weight: 900;
+    color: var(--secondary-color);
+  }
+  
+  .sidebar-col {
+    background-color: #343a40;
+    color: #fff;
+    height: 100vh;
+    overflow: auto;
+    font-family: var(--text-heading);
+  }
+  
+  .sidebar .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #495057;
+  }
+  
+  .content-col Button{
+    margin: 10px;
+  }
+  .content-col {
+    padding: 20px;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+
+  .pinput .custom-input{
+    border-radius: 0px;
+    padding: 10px; 
+    border-radius: 0px;
+    transition: border-color 0.3s ease; /* Smooth transition on focus */
+  }
+
+  .pinput .custom-input:focus{
+ 
+      border: 1px solid #000000; 
+      box-shadow: 0 0 0 0.2rem rgba(51, 255, 0, 0.377);
+
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar-col {
+      display: none;
+    }
+  
+    .content-col {
+      padding: 0;
+    }
+  }
+  
