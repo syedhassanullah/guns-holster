@@ -1,8 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import './Component.css'
-import Card from 'react-bootstrap/Card';
-import cardimg from '../images/2.png'
 import { Container, Row, Col } from 'react-bootstrap';
 
 
