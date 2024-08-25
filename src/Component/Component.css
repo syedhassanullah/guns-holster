@@ -41,7 +41,7 @@
      transition: 0.6s ease;
      font-weight: 600;
      font-family: var(--text-heading);
-     border-bottom: 2px solid black;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.6);
      font-size: 14px;
  }
 
@@ -142,7 +142,7 @@
  /* Hero section styling */
  
  .hhero{
-    background-image: url(../images/rex-allen-tz5m1uBzKAU-unsplash.jpg);  
+    background-image: url(../images/new3.jpg);  
      background-size: cover;
      background-attachment: fixed;
      animation: zoomInOut 12s infinite;
@@ -510,13 +510,40 @@
      }
  }
  @media (max-width: 750px) {
-
+    .hhero{
+        background-image: url(../images/new5.jpg);  
+         background-size: cover;
+         background-attachment: fixed;
+         animation: zoomInOut 12s infinite;
+        
+     }
+    
+     @keyframes zoomInOut {
+        0% {
+            background-size: 100%; 
+        }
+        50% {
+            background-size: 120%; 
+        }
+        100% {
+            background-size: 100%; 
+        }
  }
+}
  @media (max-width: 516px) {
      .fimg .imglog {
          width: 15rem;
          margin-bottom: 15px;
      }
+     .navbar {
+        padding: 6px 0;
+        background-color: rgba(0, 0, 0, 0.67);
+        box-shadow: 0 10px 10px rgba(34, 34, 34, 0.37);
+        top: 0;
+        margin: 10px 25px;
+        border-radius: 10px;
+   
+    }
  }
 
  @media (max-width: 390px) {
