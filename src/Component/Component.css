@@ -41,7 +41,7 @@
      transition: 0.6s ease;
      font-weight: 600;
      font-family: var(--text-heading);
-     border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+     border-bottom: 2px solid rgba(0, 0, 0, 0);
      font-size: 14px;
  }
 
@@ -177,7 +177,7 @@
      align-items: center;
      justify-content: center;
      color: white;
-     margin-top: 20px;
+     margin-top: 0px;
  }
 
  .himg2 {
@@ -529,6 +529,9 @@
             background-size: 100%; 
         }
  }
+ .hero-box{
+    margin-top: 30px;
+ }
 }
  @media (max-width: 516px) {
      .fimg .imglog {
@@ -537,7 +540,7 @@
      }
      .navbar {
         padding: 6px 0;
-        background-color: rgba(0, 0, 0, 0.67);
+        background-color: rgba(0, 0, 0, 0.798);
         box-shadow: 0 10px 10px rgba(34, 34, 34, 0.37);
         top: 0;
         margin: 10px 25px;
