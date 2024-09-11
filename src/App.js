@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './OnePageComponent/Home';
 import NotFound from './OnePageComponent/NotFound';
 import About from './Component/About';
@@ -12,6 +12,7 @@ import AdminIndex from './AdminPanel/AdminPanel/AdminIndex';
 import AdminProduct from './AdminPanel/AdminComponent/AdminProduct';
 import AdminProduct2 from './AdminPanel/AdminComponent/AdminProduct2';
 import AdminLogin from './AdminPanel/AdminLogin';
+import AdminDash from './AdminPanel/AdminComponent/AdminDash';
 
 // import Server from './Server.js';
 
@@ -72,6 +73,8 @@ function App() {
             <Route path="404" element={<NotFound />} />
             <Route path="adminlogin" element={<AdminLogin/>} />
             <Route path="admin" element={<AdminIndex />}>
+            <Route index element={<Navigate to="Index" replace />} />
+              <Route path='Index' element={<AdminDash/>} />
               <Route path="product" element={<AdminProduct />} />
               <Route path="product2" element={<AdminProduct2 />} />
             </Route>
