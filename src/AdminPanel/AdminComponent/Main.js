@@ -3,9 +3,9 @@ import '../AdminPanel/AdminIndex.css';
 
 const Main = () => {
   return (
-    <div className="main-content">
-      <h1>Welcome to the Admin Panel</h1>
-      <p>Here is where the main content will be displayed.</p>
+    <div className="main-content" style={{ height: '80px', backgroundColor: 'white', padding: '0px 30px', width: '100%', display: 'flex', alignItems: 'center' }}>
+      <h1>Header</h1>
+      <h1>main top</h1>
     </div>
   );
 };

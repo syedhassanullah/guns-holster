@@ -1,12 +1,11 @@
 import React from 'react'
-
+import { Row ,Col} from 'react-bootstrap'
 function AdminDash() {
   return (
     <div  style={{}} className='dash'>
-      <h1>
-        hello
-      </h1>
-      <h1>Admin</h1>
+      <Row>
+       
+      </Row>
     </div>
   )
 }

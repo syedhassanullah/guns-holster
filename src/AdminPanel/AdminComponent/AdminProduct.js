@@ -47,10 +47,10 @@ function AdminProduct() {
   };
   return (
     <>
-      <Container>
+  
         <div className="admin-product">
           <h1>PRODUCTS DETAIL</h1>
-        </div>
+        
         <div>
 
           <Form className='pinput'>
@@ -108,7 +108,8 @@ function AdminProduct() {
             </div>
           </Form>
         </div>
-      </Container>
+        </div>
+    
     </>
   )
 }
