@@ -13,7 +13,7 @@ const MainNavbar = () => {
         <div>
             <Navbar expand="lg" fixed='top' >
                 <Container >
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" variant="dark" className="order-0" style={{ padding: 'px 10px',backgroundColor: 'gray' ,margin:'10px'}} />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" variant="dark" className="order-0 nav-toggle"   />
                     <Navbar.Brand href="#home" >
                         <img src={imglog} className='imglog' alt="logo" />
                         {/* <h6 style={{color :"white"}}><span>contact</span> 03181888606</h6>
@@ -33,7 +33,7 @@ const MainNavbar = () => {
                         </Nav>
                         <Contact />
                     </Navbar.Collapse>
-                </Container>``
+                </Container>
             </Navbar>
         </div >
     )

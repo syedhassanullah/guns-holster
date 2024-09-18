@@ -46,7 +46,7 @@ export default function Product() {
                         <h6>Price</h6>
                         <h6>{item.price}$</h6>
                       </div>
-                      <div className='nbutton' style={{fontSize:'12px',borderRadius:'5px' }}>BUY NOW</div>
+                      <div className='nbutton' style={{fontSize:'12px' }}>BUY NOW</div>
                     </div>
                   </div>
                 </div>

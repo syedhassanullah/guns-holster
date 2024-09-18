@@ -60,7 +60,7 @@ function AdminProduct() {
               {/* <input type='file' accept='image/*' onChange={handleChange}></input> */}
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Product Id</Form.Label>
+              {/* <Form.Label>Product Id</Form.Label> */}
               <Form.Control 
               type="text" 
               placeholder="Product Id"  
@@ -70,7 +70,7 @@ function AdminProduct() {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Product Title</Form.Label>
+              {/* <Form.Label>Product Title</Form.Label> */}
               <Form.Control 
               type="text" 
               placeholder="Product Title"  
@@ -80,7 +80,7 @@ function AdminProduct() {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Description</Form.Label>
+              {/* <Form.Label>Description</Form.Label> */}
               <Form.Control 
               as="textarea" 
               rows={8} 
@@ -91,7 +91,7 @@ function AdminProduct() {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Price</Form.Label>
+              {/* <Form.Label>Price</Form.Label> */}
               <Form.Control 
               type="number" 
               placeholder="Price"  

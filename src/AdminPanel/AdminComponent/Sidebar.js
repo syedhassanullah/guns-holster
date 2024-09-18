@@ -23,7 +23,7 @@ const Sidebar = () => {
                     <Nav.Link as={Link} to="/admin/product">Product Listing</Nav.Link>
                     
                 
-                    <Nav.Link as={Link} to="/admin/product2">Product2 Listing</Nav.Link>
+                    <Nav.Link as={Link} to="/admin/product2">Orders</Nav.Link>
                     
                     {/* Add other admin links as needed
 <Nav.Link as={Link} to="/admin/products">Products</Nav.Link>

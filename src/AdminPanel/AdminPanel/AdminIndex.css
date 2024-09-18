@@ -131,13 +131,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: gray;
-  border-radius: 6px;
+  background-color: rgb(72, 72, 72);
+
 }
 
 .adminindex {
   display: flex;
-  background-color: rgb(224, 224, 224);
+  background-color: #0023251c;
 }
 
 /* Main----------------------------------------- */
@@ -154,19 +154,34 @@ body::-webkit-scrollbar-track {
 }
 
 .dash {
-  height: 80vh;
+  height: 90vh;
 }
 
 
+/* header */
+
+.main-head {
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ position: fixed;
+ height: 80px;
+ background-color: white;
+ padding: 0px 30px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+}
 
 /* product SECTION------------------------------ */
 
 .admin-product {
   padding: 30px 50px;
-  background-color: #fff;
+  background-color: #fff; 
   /* border-radius: 20px ; */
   margin-bottom: 20px;
-}
+  transition: box-shadow 0.3s ease;
+  margin-top :80px;
+}   
+
 
 .admin-product h1 {
   padding: 30px 0px;
@@ -174,6 +189,7 @@ body::-webkit-scrollbar-track {
   font-weight: 900;
   color: var(--secondary-color);
 }
+
 
 .pinput .custom-input {
   border-radius: 0px;
@@ -211,6 +227,7 @@ body::-webkit-scrollbar-track {
   overflow-x: hidden;
   padding-bottom: 40px;
   color: aliceblue;
+  
 }
 
 .sidebar-wrapper .sidebar::-webkit-scrollbar {
@@ -241,9 +258,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   align-items: center;
   padding-left: 30px;
-
   font-weight: 600;
-
 }
 
 .sidebar-wrapper .sidebar .link .nav-link:hover {
