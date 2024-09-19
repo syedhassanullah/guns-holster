@@ -1,4 +1,9 @@
- /* Reset default margin and padding */
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+ 
+ 
+ 
  * {
      margin: 0;
      padding: 0;
@@ -27,7 +32,6 @@
  .navbar {
      padding: 6px 0;
      background-color: #000000b0;
-     /* background-color: var(--background-color); */
      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.37);
      backdrop-filter: blur(8px);
      top: 0;
@@ -115,7 +119,7 @@
     font-size: 50px;
     font-family: var(--text-heading);
     font-weight: 800;
-    padding: 80px 0px;
+    padding: 60px 0px;
 }
 
 
@@ -222,7 +226,7 @@
 
  /* Product section styling */
  .product {
-     padding: 20px 0px;
+     padding: 0px 0px;
      padding-bottom: 80px;
      background-image: url(../images/hhhhh33.png);
      background-size: 1000px;
@@ -235,7 +239,7 @@
      display: flex;
      flex-wrap: wrap;
      align-items: center;
-     justify-content: space-evenly;
+     justify-content: center;
  }
 
  .product .card1 {
@@ -261,7 +265,7 @@
     width: 100%; 
     height: 225px; 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
 
@@ -286,12 +290,12 @@
 }
 
 .product-card-text p{
-    display: -webkit-box; /* Required for WebKit browsers */
-    -webkit-line-clamp: 3; /* Number of lines to show */
-    -webkit-box-orient: vertical; /* Set the box orientation */
-    overflow: hidden; /* Hide any content that overflows the box */
-    text-overflow: ellipsis; /* Display ellipsis (...) */
-    line-height: 1.5; /* Adjust line height as needed */
+    display: -webkit-box; 
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    line-height: 1.5; 
     max-height: 3.5rem;
     font-size: 13px;
 }
@@ -301,12 +305,6 @@
     justify-content: space-between;
     font-weight: 600;
 }
-
-
-
-
-
-
 
  /* About container styling */
 .about{
@@ -344,12 +342,10 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    filter: blur(px); /* Applies blur to the background image */
+    filter: blur(px); 
     position: relative;
 
 }
-
-/* Optional: To make sure content within the 'about-img-up' is not blurred */
 .about-img-up::after {
     content: "";
     position: absolute;
@@ -363,6 +359,14 @@
 }
 
 
+
+/* Gellary */
+.gallery-top{
+    padding-top: 70px;
+}
+.gallery{
+    padding: 0px 160px;
+}
 
  /* App container styling */
  .App {
@@ -381,89 +385,54 @@
      padding-left: 8px;
  }
 
-
-
-
-
-
-
-
  /* Services--------------------------  */
 
  .service{
     min-height: 80vh;
+    padding: 50px 0px;
 }
 
  .service-card{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 50px 0px;
- }
-
- .service-card-box{
-
-    width: 300px;
-    height: 150px;
-    border-radius: 0px;
-    padding: 10px 50px;
-    border: 2px solid var(--secondary-color);
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
-    cursor: pointer;
-    margin: 50px 0px;
- }
-
- .service-card-box:hover{
-    height: 400px;
  }
  
- .service-imgbox{
+ .service-card .card-box{
+    width: 250px;
+    background-color: #fefefe;
+    height: 220px;
+    margin: 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 3px;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: var(--text-heading);
+ }
 
-    width: 100%;
-    height: 100%;
-    transform: translateY(-90px);
-    z-index: 99;
-}
-
-.service-imgbox .shead{
-    width: 100%;
-    height: 150px;
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-    text-align: center;
+ .service-card .card-box h2{
+    color: var(--secondary-color);
+    font-weight: 900;
+ }
+.button{
+    width: 150px;
+ }
+ .button1{
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-}
+    margin: 20px 0px;
+ }
 
-.service-contain{
-    padding: 10px 10px;
-    transform: translateY(-295px);
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.service-card-box:hover > .service-contain{
-    opacity: 1;
-    transform: translatey(-300);
-}
-
-
-
-
-
+ 
 
  /* MAP STYLING */
  .map {
      padding: 20px 0px;
      background-color:#15ff002d;
  }
-
-
-
-
-
 
  /* Footer styling */
  .footer {
@@ -512,12 +481,6 @@
      font-weight: 400;
 }
 
-
-
-
-
-
-
  /* LOGIN BOX -------------- */
 
  .login-box{
@@ -543,10 +506,6 @@
   .login-box .lbtn{
     border: 2px solid black;
   }
-
-
-
-
   
  /* Media queries for responsiveness */
  @media (max-width: 986px) {
@@ -586,6 +545,10 @@
         background-position: center;
         background-attachment: fixed;
     }
+    .gallery{
+        padding: 0px 120px;
+    }
+    
  }
  @media (max-width: 750px) {
     .hhero{
@@ -634,6 +597,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
+    }
+    .gallery{
+        padding: 0px 60px;
     }
  }
 

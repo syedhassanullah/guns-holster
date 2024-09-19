@@ -28,8 +28,8 @@ export default function Product() {
 
       <Container >
         <h1 className='heading'>OUR PRODUCTS</h1>
-        <Row>
-          <Col>
+        
+        
             <div className='cardbx'>
               {posts.map((item, index) => (
 
@@ -52,9 +52,7 @@ export default function Product() {
                 </div>
               ))}
             </div>
-
-          </Col>
-        </Row>
+          
       </Container>
     </div>
   );
