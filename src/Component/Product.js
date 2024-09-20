@@ -13,7 +13,7 @@ export default function Product() {
 
   const GetDynamicData = async () => {
     try {
-      const res = await fetch("https://guns-holsters.netlify.app/api/product");
+      const res = await fetch("http://localhost:8000/api/product");
       const data = await res.json();
       setPosts(data.data);
       console.log(data.data);
