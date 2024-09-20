@@ -312,7 +312,7 @@
 }
 @media (max-width: 450px){
     .product-card-box{
-        width: 145px;
+        width: 167px;
         margin: 10px;
         backdrop-filter: blur(30px);
         overflow: hidden;
