@@ -43,7 +43,7 @@ const Contact = () => {
       message: message.current.value
     }
 
-    if(detail == ''){
+    if(detail === ''){
       alert('try')
     }else{
 
