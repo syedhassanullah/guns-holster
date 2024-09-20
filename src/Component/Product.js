@@ -13,7 +13,7 @@ export default function Product() {
 
   const GetDynamicData = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/product");
+      const res = await fetch("https://guns-holsters.netlify.app/api/product");
       const data = await res.json();
       setPosts(data.data);
       console.log(data.data);
@@ -46,7 +46,9 @@ export default function Product() {
                         <h6>Price</h6>
                         <h6>{item.price}$</h6>
                       </div>
-                      <div className='nbutton' style={{fontSize:'12px' }}>BUY NOW</div>
+                      <div className='nbutton' >
+                        BUY NOW
+                        </div>
                     </div>
                   </div>
                 </div>

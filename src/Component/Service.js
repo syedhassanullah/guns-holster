@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import './Component.css';
+import Contact from '../OnePageComponent/Contact';
 
 function Service() {
   return (
@@ -35,7 +36,7 @@ function Service() {
         <div className='button1'>
         <div className='button'>
         <div className='nbutton'>
-          Contact Us
+          <Contact/>
         </div>
         </div>
         </div>

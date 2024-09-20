@@ -46,16 +46,15 @@ export default function Footer() {
               <p>
                 03181088606<br />
                 03181088606<br/>
-                syedhassanullah.0900@gmail.com
               </p>
               {/* <h6> syedhassanullah.0900@gmail.com</h6> */}
             </div>
-            <div className='icon' >
+            {/* <div className='icon' >
                 <FontAwesomeIcon icon={faFacebook} size="xl" className='icon2' />
                 <FontAwesomeIcon icon={faInstagram} size="xl" className='icon2' />
                 <FontAwesomeIcon icon={faWhatsapp} size="xl" className='icon2' />
                 <FontAwesomeIcon icon={faTiktok} size="xl" className='icon2' />
-            </div>
+            </div> */}
           </Col>
 
         </Row>
