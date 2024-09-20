@@ -472,9 +472,9 @@
         flex-wrap: wrap;
      }
     .service-card .card-box{
-        width: 140px;
+        width: 170px;
         background-color: #fefefe;
-        height: 140px;
+        height: 170px;
         margin: 15px;
         border: 2px solid var(--secondary-color);
         border-radius: 3px;

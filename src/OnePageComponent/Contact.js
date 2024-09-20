@@ -43,6 +43,10 @@ const Contact = () => {
       message: message.current.value
     }
 
+    if(detail == ''){
+      alert('try')
+    }else{
+
 
     Axios.post('http://localhost:8000/api/contact1', detail)
       .then(response => {
@@ -67,7 +71,7 @@ const Contact = () => {
         alert("Please resend");
       });
 
-
+    }
 
   }
   return (
