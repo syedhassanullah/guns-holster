@@ -1,39 +1,31 @@
-import React, { useState } from 'react';
-import { Container, Nav } from 'react-bootstrap';
-import '../AdminPanel/AdminIndex.css';
+import React from 'react';
+import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import '../AdminPanel/AdminIndex.css';
 
-const Sidebar = () => {
-
-    // const [show , setShow] = useState;
-    // const handleshow = () =>{
-    //     (!show)
-    // }
+const Sidebar = ({ onToggleSidebar }) => {
     return (
-        <div className=" sidebar">
-
-            <div>
-                <h1>Hi Admin</h1>
+        <>
+            {/* Toggle button */}
+            <div className="toggle-sidebar" onClick={onToggleSidebar}>
+                <FontAwesomeIcon icon={faBars} /> {/* Hamburger icon */}
             </div>
-        <div className='link'>
-        
+
+            {/* Sidebar */}
+            <div className="sidebar">
+                <div>
+                    <h1>Hi Admin</h1>
+                </div>
+                <div className="link">
                     <Nav.Link as={Link} to="/admin">Home</Nav.Link>
-                    
-                        
                     <Nav.Link as={Link} to="/admin/product">Product Listing</Nav.Link>
-                    
-                
                     <Nav.Link as={Link} to="/admin/product2">Orders</Nav.Link>
-                    
-                    {/* Add other admin links as needed
-<Nav.Link as={Link} to="/admin/products">Products</Nav.Link>
-<Nav.Link as={Link} to="/admin/settings">Settings</Nav.Link> */}
-           </div>
-            
-        </div>
+                </div>
+            </div>
+        </>
     );
 };
 
 export default Sidebar;
-
-
